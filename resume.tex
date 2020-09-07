@@ -1,0 +1,255 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.2 (16/9/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\documentclass[]{deedy-resume-openfont}
+\usepackage{fancyhdr}
+ 
+\pagestyle{fancy}
+\fancyhf{}
+ 
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\namesection{Deepak}{Kumar}{ \urlstyle{same}\href{https://deepak-kumar.netlify.app}{deepak-kumar.netlify.app }| \href{https://www.linkedin.com/in/deepak-kumar-bb1810115/}{deepak@linkedin } \\
+\href{mailto:kumar.de@northeastern.edu}{kumar.de@northeastern.edu}| 857.891.0357 |
+{01 Copenger Street, Boston, MA 02120}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.33\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education} 
+
+\subsection{Northeastern University}
+\descript{MS in Computer Science}
+\location{Sep 2019 - Dec 2021 | Boston, MA}
+Khoury College of Computer Sciences \\
+\location{ GPA: 4.0 / 4.0}
+\sectionsep
+
+\subsection{Visvesvaraya Technological University}
+\descript{BE in Information Science}
+\location{Aug 2012 - May 2016 | Hassan, India}
+Malnad College of Engineering \\
+\location{ GPA: 8.52 / 10}
+\sectionsep
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Links} 
+Github:// \href{https://github.com/itachi1994}{\bf @itachi1994} \\
+LinkedIn://  \href{https://www.linkedin.com/in/deepak-kumar-bb1810115/}{\bf deepak-kumar} \\
+Website://  \href{https://deepak-kumar.netlify.app/}{\bf deepakkumar} \\
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Coursework}
+\subsection{Graduate}
+Programming Design Paradigm \\
+Database Management System \\
+Web Development \\
+Algorithms \\
+Foundation of Software Engineering \\
+Information Retrieval \\
+\sectionsep
+
+\subsection{Undergraduate}
+Object-Oriented Programming \\
+Operating Systems \\
+Data Structures \\
+User Interface \\
+Web Development \\
+Unix Tools and Scripting \\
+Cryptography \\
+Computer Networks\\
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+\subsection{Programming}
+\location{Programming Languages:}
+Java \textbullet{} JavaScript ES6
+ \textbullet{}  TypeScript\\ \textbullet{} SAP ABAP\\ 
+\location{Framework:}
+Node.js \textbullet{} React.js \textbullet{} React Native \textbullet{} Spring Boot \textbullet{} Maven \textbullet{} Express.js\\
+\location{Databases:}
+MySQL \textbullet{} MongoDB \textbullet{} DynamoDB\\
+\location{Cloud and Services:}
+AWS \textbullet{} Azure \textbullet{} OCI \textbullet{}
+Jira \textbullet{} Jenkins \textbullet{} Git \textbullet{} SVN \textbullet{} BitBucket \textbullet{} GitLab \textbullet{} Docker\\ \textbullet{} Firebase \textbullet{} Heroku \textbullet{} Splunk\\
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.66\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Experience}
+\runsubsection{Northeastern University}
+\descript{| Teaching Assistant }
+\location{Sep 2020 - Present | Boston, MA}
+
+\sectionsep
+
+\runsubsection{Slalom Build}
+\descript{| Software Engineering Intern }
+\location{June 2020 – Aug 2020 | Boston, MA}
+\textbf{Stagen Leadership App | \emph{React Native, AWS, Node.js, TypeScript, Bit Bucket, JIRA} }
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Led Cloud, DevOps, and Security effort in the team of 12. Provisioned AWS infrastructure using infrastructure as code, built Bit Bucket pipelines, and integrated front-end with App Center.
+\item Collaborated on Stagen Mobile App - the mobile user interface for Stagen leadership platform.
+\item Full-stack developer - Wrote and reviewed code for TypeScript, Node.js, and React Native. 
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Brillio}
+\descript{| Software Engineer }
+\location{Aug 2016 – Aug 2019 | Bengaluru, India}
+\textbf{Server To Serverless | \emph{Node.js, AWS, Python, HTML, JQuery, CSS, SVN, JIRA} }
+\begin{tightemize}
+\item Implemented application by migrating Python server-based code to serverless code using Node.js and AWS, which increased the response time of application by 20 \%.
+\item Created and deployed RESTful API’s using API Gateway. Used CloudFormation to create and manage AWS resources.
+\end{tightemize}
+\sectionsep
+\textbf{Notification Mechanism  | \emph{Node.js, AWS, GiT, JIRA, Splunk } }
+\begin{tightemize}
+\item Developed a mechanism to send notifications on change of an attribute of a property listing, which helped stakeholders to make more informed decisions, resulting in a 15 \% increase in returning customer base.
+\item Achieved 100 \% unit test coverage by following test-driven development using Chai Mocha. Followed the agile software development process and contributed to sprint planning and retrospective.
+\end{tightemize}
+\sectionsep
+
+\textbf{OptiGST | \emph{SAP ABAP, Java } }
+\begin{tightemize}
+
+\item Collaborated on OptiGST - an ERP solution in response to new taxation regime introduced in India in 2016. 
+\item OptiGST is used daily by more than 20 big organizations for GST compliance.
+
+
+\end{tightemize}
+\sectionsep
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Academic and Personal Projects
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Academic \& Personal Projects}
+% \runsubsection{Cornell Robot Learning Lab}
+% \descript{| Researcher}
+\textbf{Image Processing Application | \emph{Java, Git}} \\
+% Worked with \textbf{\href{http://www.cs.cornell.edu/~ashesh/}{Ashesh Jain}} and \textbf{\href{http://www.cs.cornell.edu/~asaxena/}{Prof Ashutosh Saxena}} to create \textbf{PlanIt}, a tool which  learns from large scale user preference feedback to plan robot trajectories in human environments.  
+Built an Image processing application to apply six filters on an image such as greyscale, sepia, mosaic, dithering, blur, and sharpen using MVC architecture and design patterns. 
+\sectionsep
+
+
+% \runsubsection{Cornell Phonetics Lab}
+% \descript{| Head Undergraduate Researcher}
+\textbf{BookBar e-Commerce Website | \emph {Node.js, MongoDB, React.js, Redux, Heroku}}\\
+% Led the development of \textbf{QuickTongue}, the first ever breakthrough tongue-controlled game with \textbf{\href{http://conf.ling.cornell.edu/~tilsen/}{Prof Sam Tilsen}} to aid in Linguistics research. 
+Collaborated on building a full stack web app that manages different user profiles, scopes, and log in. The application provides a platform for buyers and sellers to buy and sell books.
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     AWARDS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Certification} 
+2020	      \location{AWS Certified Developer Associate}
+2020	     \location{AWS Certified Solution Architect Associate}
+2020	     \location{Oracle Cloud Infrastructure Foundation Associate}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     PUBLICATIONS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \section{Publications} 
+% \renewcommand\refname{\vskip -1.5em} % Couldn't get this working from the .cls file
+% \bibliographystyle{abbrv}
+% \bibliography{publications}
+% \nocite{*}
+
+\end{minipage} 
+\end{document}  \documentclass[]{article}
